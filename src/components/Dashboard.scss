@@ -1,0 +1,108 @@
+.dashboard {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      color: #2563eb;
+      margin-bottom: 2rem;
+    }
+  
+    .search-add-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  
+      input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        width: 16rem;
+        outline: none;
+  
+        &:focus {
+          border-color: #2563eb;
+          box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        }
+      }
+  
+      button {
+        background-color: #2563eb;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #1d4ed8;
+        }
+      }
+    }
+  
+    .policy-list {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+        transition: box-shadow 0.3s;
+  
+        &:hover {
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+  
+        .policy-info {
+          h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+          }
+  
+          p {
+            color: #64748b;
+          }
+        }
+  
+        .policy-actions {
+          display: flex;
+          gap: 1rem;
+  
+          button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+  
+            &.edit {
+              background-color: #f59e0b;
+              color: white;
+  
+              &:hover {
+                background-color: #d97706;
+              }
+            }
+  
+            &.delete {
+              background-color: #ef4444;
+              color: white;
+  
+              &:hover {
+                background-color: #dc2626;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
